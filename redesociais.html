@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>APW I - Aula de Context Menu e JS</title>
+	</head>
+	<body>
+		<div id="page-wrapper">
+			<h1>Exemplo de Context Menu em HTML5</h1>
+			<p>Context menus são suportados apenas no Firefox (Da versão 8 pra cima).</p>
+			<div id="target" contextmenu="menu">Clique aqui com o botão direito para visualizar o menu.</div><br/>
+			<menu type="context" id="menu">
+				<menuitem label="Siga-nos no Twitter" onclick="window.location='https://twitter.com/intent/tweet?text=Vejam esta página! ' + window.location.href;" icon="img/twitter.png"></menuitem>
+				<menuitem label="Siga-nos no Instagram" onclick="window.location= "https://www.instagram.com/beatrizo_0/"; icon="img/instagram.png">
+					
+				</menuitem>
+			</menu>
+			<form onsubmit="CalculaIdade();">
+				Nome: <input type="text" id="idnome"/><br/>
+				<!-- Ano Nascimento: <input type="text" id="idano"/><br/> -->
+				<!-- Mês Nascimento: <input type="text" id="idmes"/><br/> -->
+				<!-- Dia Nascimento: <input type="text" id="iddia"/><br/> -->
+				Data de Nascimento: <input type= "text" id="iddata"/><br/>
+				<input type="submit" id="idbotao" value="Calcular"/>
+			</form>
+			<script src="calculo.js"></script>
+		</div>
+	</body>
+</html>
